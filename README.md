@@ -4,4 +4,4 @@ This repo contains files I used for the half-day workshop I presented in Nov 201
 It contains:
 + a file of the presentation slides describing a basic R-based analysis of meta-barcoding (16S) data
 + the R scripts used in the analysis
-+ bonus material – an example of a QIIME2 Bash script (and associated metadata files) used to process raw 16S sequence data
++ bonus material – the QIIME2 Bash script (and associated metadata files) used to process the 16S sequence data used in the workshop
