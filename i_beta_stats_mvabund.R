@@ -44,7 +44,7 @@ mod <- manyglm(comboMva ~ combo$genotype * combo$samplingDay, family="negative_b
 plot(mod)
 # that's better
 
-# OK, let's run an anova on the model
+# OK, let's use the anova function to interogate our model
 anova(mod)
 
 #                                      Res.Df   Df.diff   Dev       Pr(>Dev)    
@@ -57,7 +57,7 @@ anova(mod)
 
 # The data differ significantly based on genotype & sampling-day.
 # However, there is also a significant interaction.
-# I'm going to look at the differences between the genotypes on each sampling-day
+# Let's look at the differences between the genotypes on each sampling-day
 
 comboDay1 <- subset(combo, samplingDay == "1")
 comboMva1 <- mvabund(comboDay1[,3:220])
