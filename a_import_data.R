@@ -46,10 +46,9 @@ emri_otu_mat <- as.matrix(emri_otu)
 emri_tax_mat <- as.matrix(emri_tax)
 
 # combine OTU, taxonomy, and metadata files into a phyloseq object
-phy <- phyloseq(otu_table(emri_otu_mat, 
-                          taxa_are_rows = T),
-                          tax_table(emri_tax_mat),
-                          sample_data(emri_met))
+phy <- phyloseq(otu_table(emri_otu_mat, taxa_are_rows = T),
+                tax_table(emri_tax_mat),
+                sample_data(emri_met))
 
 # add tree data
 phy <- merge_phyloseq(phy, emri_tre)
